@@ -4,7 +4,6 @@ const calculatePoints = require("../utils/calculatePoints.js");
 
 exports.processResult = async (req, res) => {
   const teams = await TeamEntry.find();
-
   for (const team of teams) {
     let totalPoints = 0;
 
